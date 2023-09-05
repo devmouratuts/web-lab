@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <title>Singup</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Cadastro</h1>
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
+        <div class="label-float">
+          <input type="text" id="name" placeholder=" " required />
+          <label id="labelNome" for="name">Nome</label>
+        </div>
+
+        <div class="label-float">
+          <input type="text" id="email" placeholder=" " required />
+          <label id="email" for="email">E-mail</label>
+        </div>
+
+        <div class="label-float" >
+          <label>Qual o tipo de acesso?<label>
+        </div>
+
+        <select
+                id="select"
+                class="form-select select-container field"
+              >
+                <option disabled selected value="">Selecione</option>
+                <option value="0">Admin</option>
+                <option value="1">Usuário</option>
+              </select>
+       
+        
+        <div class="label-float">
+                <input type="password" id="password" placeholder=" " required />
+                <label id="labelSenha" for="senha">Senha</label>
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+
+        <div class="label-float">
+                <input type="password" id="confirmSenha" placeholder=" " required />
+                <label id="labelConfirmSenha" for="confirmSenha"
+                  >Confirmar Senha</label
+                >
+                <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+              
+        <div class="label-float" >
+                <label>O usúario está ativo ou inativo?<label>
+              </div>
+        <select
+        class="form-select select-container field"
+      >
+        <option disabled selected value="">Selecione</option>
+        <option value="0">Ativo</option>
+        <option value="1">Inativo</option>
+            </select>              
+            
+        
+        <div class="label-float">
+          <input type="text" id="Cpf_Cnpj" placeholder=" " required />
+          <label id="labelCpf_Cnpj" for="Cpf_Cnpj">CPF/CNPJ</label>
+        </div>
+
+        <div class="label-float">
+          <input type="text" id="phone" placeholder=" " required />
+          <label id="phone" for="phone">Telefone</label>
+        </div>     
+
+        <div class="justify-center">
+          <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/signup.js"></script>
+  </body>
+</html>
